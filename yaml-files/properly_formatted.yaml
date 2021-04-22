@@ -1,0 +1,337 @@
+#
+# generated with http://www.yamllint.com/
+#
+#
+# USE YAML FILES OF THIS TYPE TO GENERATE RANDOM DATA! 
+#
+#
+# Each entry (in the format of the template below)
+#
+#
+# sample entry:
+# ? ______ (name of data to generate)
+# :
+#   constraints: _____ (THESE OVERRIDE THE DISTRIBUTION. ~ for none, if not, blank.)
+#     min: ____ # minimum value acceptable, int or float. If ''
+#     max: ____ # maximum value acceptable, int or float
+#     (other future constraints go here)
+#
+#   distribution: (specifies distribution to be generated)
+#     name: _____ # normal, uniform, beta, poisson, binomial, etc. should be the string name of the distribution.
+#     mean: _____ # for normal distribution, int or float
+#     std: _____ # for normal distribution, int or float
+#     prob: ______ # for use with binomial distribution, float in range [0,1]
+#     n: ______ # for use with binomial distribution, positive integer
+#     lam: _____ # for use with Poisson or exponential distribution, int or float
+#     a: _____ # minimum bound of uniform distribution
+#     b: # upper bound of uniform distribution
+#     alpha: _____ #  for use with beta
+#     beta: # for use with beta
+#     shape: # for use with gamma
+#     scale: _____ # for use with gamma
+#     (other future distribution parameters go here)
+#
+#   strings: _________ (include if type == string; file path to TXT file containing sample strings) {IN TXT FILE, SEPARATE STRINGS WITH COMMAS}
+#   type: ______ (string, int, date, float, boolean, etc. should be a string)
+# 
+rows: 200
+
+? "normalfloat"
+: 
+  constraints: ~
+  distribution: 
+    mean: 5
+    name: 'normal'
+    std: 0.7
+  type: float
+
+
+? "doubleboundednormalfloat"
+: 
+  constraints:
+    min: 4.5
+    max: 5.5
+  distribution: 
+    mean: 5
+    name: 'normal'
+    std: 1
+  type: float
+
+? "lowerboundednormalfloat"
+: 
+  constraints:
+    min: 4.5
+  distribution: 
+    mean: 5
+    name: 'normal'
+    std: 1
+  type: float
+
+? "upperboundednormalfloat"
+: 
+  constraints:
+    max: 5.5
+  distribution: 
+    mean: 5
+    name: 'normal'
+    std: 1
+  type: float
+
+
+? "lognormalfloat"
+: 
+  constraints: ~
+  distribution: 
+    mean: 5
+    name: 'lognormal'
+    std: 0.7
+  type: float
+
+? "binomialfloat"
+: 
+  constraints: ~
+  distribution: 
+    n: 5
+    name: 'binomial'
+    prob: 0.7
+  type: float
+
+? "poissonfloat"
+: 
+  constraints: ~
+  distribution: 
+    lam: 5
+    name: 'poisson'
+  type: float
+
+? "betafloat"
+: 
+  constraints: ~
+  distribution: 
+    alpha: 23
+    beta: 3
+    name: 'beta'
+  type: float
+
+? "gammafloat"
+: 
+  constraints: ~
+  distribution: 
+    shape: 3
+    scale: 4
+    name: 'gamma'
+  type: float
+
+? "exponentialfloat"
+: 
+  constraints: ~
+  distribution: 
+    lam: 30
+    name: 'exponential'
+  type: float
+
+? "uniformfloat"
+: 
+  constraints: ~
+  distribution: 
+    a: 30
+    b: 31
+    name: 'uniform'
+  type: float
+
+? "normalint"
+: 
+  constraints: ~
+  distribution: 
+    mean: 5
+    name: 'normal'
+    std: 0.7
+  type: int
+
+
+? "doubleboundednormalint"
+: 
+  constraints:
+    min: 4.5
+    max: 5.5
+  distribution: 
+    mean: 5
+    name: 'normal'
+    std: 1
+  type: int
+
+? "lowerboundednormalint"
+: 
+  constraints:
+    min: 4.5
+  distribution: 
+    mean: 5
+    name: 'normal'
+    std: 1
+  type: int
+
+? "upperboundednormalint"
+: 
+  constraints:
+    max: 5.5
+  distribution: 
+    mean: 5
+    name: 'normal'
+    std: 1
+  type: int
+
+
+? "lognormalint"
+: 
+  constraints: ~
+  distribution: 
+    mean: 5
+    name: 'lognormal'
+    std: 0.7
+  type: int
+
+? "binomialint"
+: 
+  constraints: ~
+  distribution: 
+    n: 5
+    name: 'binomial'
+    prob: 0.7
+  type: int
+
+? "poissonint"
+: 
+  constraints: ~
+  distribution: 
+    lam: 5
+    name: 'poisson'
+  type: int
+
+? "betaint"
+: 
+  constraints: ~
+  distribution: 
+    alpha: 23
+    beta: 3
+    name: 'beta'
+  type: int
+
+? "gammaint"
+: 
+  constraints: ~
+  distribution: 
+    shape: 3
+    scale: 4
+    name: 'gamma'
+  type: int
+
+? "exponentialint"
+: 
+  constraints: ~
+  distribution: 
+    lam: 30
+    name: 'exponential'
+  type: int
+
+? "uniformint"
+: 
+  constraints: ~
+  distribution: 
+    a: 30
+    b: 31
+    name: 'uniform'
+  type: int
+
+? "bernoulliint"
+: 
+  constraints: ~
+  distribution: 
+    p: 0.7
+    name: 'bernoulli'
+  type: int
+
+? "name"
+: 
+  constraints: ~
+  distribution: 
+    mean: 2
+    name: 'normal'
+    std: 0.5
+  strings: default-text/default_province.txt
+  type: string
+
+
+? "province"
+: 
+  constraints: ~
+  distribution: 
+    mean: 1
+    name: normal
+    std: 0.5
+  strings: default-text/default_province.txt
+  type: string
+
+
+? "age"
+: 
+  constraints: ~
+  distribution: 
+    mean: 30
+    name: normal
+    std: 1.5
+  type: "int"
+
+
+? "lifespan"
+: 
+  constraints:
+    min: 1900
+    max: 1960
+  distribution: 
+    mean: 30
+    name: normal
+    std: 1.5
+  type: "date"
+
+? "lifespan"
+: 
+  constraints:
+    min: 1990
+    max: 2030
+  distribution: 
+    mean: 30
+    name: normal
+    std: 1.5
+  type: "date"
+
+? "conception date"
+: 
+  constraints:
+    min: 1900
+    max: 2000
+  distribution: 
+    mean: 30
+    name: normal
+    std: 1.5
+  type: "date"
+
+
+? "diabetic"
+: 
+  constraints: ~
+  distribution: 
+    prob: 0.4
+    n: 1
+    name: binomial
+  strings: default-text/boolean.txt
+  type: "string"
+
+? "favorite state"
+: 
+  constraints: ~
+  distribution: 
+    min: 0
+    max: 49
+    name: uniform
+  strings: default-text/us-states.txt
+  type: "string"

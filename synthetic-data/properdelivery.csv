@@ -1,0 +1,21 @@
+,_id,birth_date,date_of_birth,error,lat,long,message,name,patient_id,patient_uuid,source,source_id,still_pregnant,use_cases
+0,219,1950-08-25,1918-05-25,8.0,120.34,30.54,What time are you available?,hi,1078,330,975,1027,no,use2
+1,59,1997-10-19,1904-10-23,1.0,120.34,30.54,When can I reach you?,bye,635,527,1165,550,no,use10
+2,57,1983-06-20,1904-05-19,5.0,120.34,30.54,What time are you available?,bye,1147,1015,998,1009,no,use6
+3,49,1985-08-17,1911-04-22,3.0,120.34,30.54,What time are you available?,hi,487,849,433,99,no,use3
+4,501,1971-05-26,1949-01-19,6.0,120.34,30.54,What time are you available?,bye,1072,720,22,37,no,use12
+5,268,1999-08-22,1943-02-26,3.0,120.34,30.54,When can I reach you?,nah,430,270,213,1142,no,use2
+6,920,1957-07-18,1927-01-25,5.0,120.34,30.54,When can I reach you?,bye,1027,207,1110,844,no,use11
+7,1074,2007-10-08,1908-10-02,8.0,120.34,30.54,What time are you available?,bye,963,803,314,1211,no,use4
+8,1098,1951-03-19,1930-06-04,8.0,120.34,30.54,When can I reach you?,bye,1078,29,1153,10,no,use12
+9,912,1977-08-01,1910-02-09,5.0,120.34,30.54,What time are you available?,nah,1007,1226,1186,321,no,use13
+10,748,1975-02-11,1906-08-04,4.0,120.34,30.54,When can I reach you?,nah,377,602,836,550,no,use7
+11,505,2010-09-14,1911-02-09,7.0,120.34,30.54,When can I reach you?,bye,56,938,737,267,no,use7
+12,208,2007-06-04,1915-02-04,2.0,120.34,30.54,What time are you available?,nah,1022,330,617,725,no,use6
+13,1018,1951-04-26,1915-04-24,9.0,120.34,30.54,When can I reach you?,bye,1167,220,734,172,no,use9
+14,799,1970-04-21,1942-03-15,5.0,120.34,30.54,When can I reach you?,nah,541,176,1067,978,no,use5
+15,327,1962-08-13,1951-06-22,7.0,120.34,30.54,When can I reach you?,nah,717,821,801,261,no,use4
+16,655,2011-09-04,1939-03-22,5.0,120.34,30.54,What time are you available?,bye,619,167,143,562,no,use6
+17,704,2017-10-10,1921-11-03,5.0,120.34,30.54,When can I reach you?,nah,230,1011,914,1216,no,use13
+18,134,1950-07-19,1927-08-11,8.0,120.34,30.54,What time are you available?,nah,232,497,1149,390,no,use10
+19,62,2015-06-22,1936-07-11,4.0,120.34,30.54,What time are you available?,nah,15,542,898,782,no,use4

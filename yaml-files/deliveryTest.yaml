@@ -1,0 +1,115 @@
+---
+rows: 20
+lat:
+  constraints: 
+    max: 150.43
+    min: 120.34
+  distribution: 
+    mean: 30
+    name: normal
+    std: 2
+  type: float
+long:
+  constraints: 
+    max: 60.32
+    min: 30.54
+  distribution: 
+    mean: 10
+    name: normal
+    std: 4
+  type: float
+error: 
+  constraints: 
+    max: 10.3
+    min: 1
+  distribution: 
+    lam: 5
+    name: poisson
+  type: float
+message:
+  constraints: ~
+  distribution: 
+    name: normal
+    mean: 4
+    std: 2
+  strings: default-text/messages.txt
+  type: string
+source:
+  constraints: ~
+  distribution: 
+     name: uniform
+     a: 0 
+     b: 1234
+  type: int
+source_id:
+  constraints: ~
+  distribution: 
+    name: uniform
+    a: 0
+    b: 1234
+  type: int
+_id:
+  constraints: ~
+  distribution: 
+    name: uniform
+    a: 0
+    b: 1234
+  type: int
+patient_id:
+  constraints: ~
+  distribution: 
+    name: uniform
+    a: 0
+    b: 1234
+  type: int
+name:
+  constraints: ~
+  distribution: 
+    mean: 2
+    name: 'normal'
+    std: 0.5
+  strings: default-text/default_name.txt
+  type: string
+date_of_birth:
+  constraints: 
+    min: 1900
+    max: 1960
+  distribution: null
+  type: date
+use_cases:
+  constraints: null
+  distribution: 
+    name: uniform
+    a: 1
+    b: 15
+  strings: default-text/use_cases.txt
+  type: string
+patient_uuid:
+  constraints: null
+  distribution: 
+    name: uniform
+    a: 0
+    b: 1234
+  type: int
+patient_id:
+  constraints: null
+  distribution: 
+    name: uniform
+    a: 0
+    b: 1234
+  type: int
+birth_date:
+  constraints: 
+    min: 1950
+    max: 2021
+  distribution: null
+  type: date
+still_pregnant:
+  constraints: null
+  distribution: 
+    name: uniform
+    a: 1
+    b: 2
+  strings: default-text/boolean.txt
+  type: string
+-

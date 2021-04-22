@@ -47,4 +47,4 @@ def xmlParse(fileName):
     dfs(form, columns) #extract column names with DFS
     return cleanColumnNames(columns) #clean the columns and return
 
-xmlParse('death_report.xml')
+
