@@ -74,10 +74,10 @@ date_of_birth:
   constraints: 
     min: 1900
     max: 1960
-  distribution: null
+  distribution: ~
   type: date
 use_cases:
-  constraints: null
+  constraints: ~
   distribution: 
     name: uniform
     a: 1
@@ -85,14 +85,14 @@ use_cases:
   strings: default-text/use_cases.txt
   type: string
 patient_uuid:
-  constraints: null
+  constraints: ~
   distribution: 
     name: uniform
     a: 0
     b: 1234
   type: int
 patient_id:
-  constraints: null
+  constraints: ~
   distribution: 
     name: uniform
     a: 0
@@ -102,14 +102,13 @@ birth_date:
   constraints: 
     min: 1950
     max: 2021
-  distribution: null
+  distribution: ~
   type: date
 still_pregnant:
-  constraints: null
+  constraints: ~
   distribution: 
     name: uniform
     a: 1
     b: 2
   strings: default-text/boolean.txt
   type: string
--

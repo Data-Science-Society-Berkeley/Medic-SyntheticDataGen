@@ -1,5 +1,7 @@
-xlrd==2.0.1
-openpyxl==3.0.6
-faker==6.5.0
-sqlalchemy
-psycopg2-binary
+regex==2021.4.4
+PyYAML==5.4.1
+pandas==1.2.4
+numpy==1.19.5
+virtualenv==20.4.3
+pycopy-xml.etree.ElementTree
+ordereddict

@@ -1,0 +1,174 @@
+---
+rows:
+lat:
+  constraints: null
+  distribution: null
+  type: null
+long:
+  constraints: null
+  distribution: null
+  type: null
+error:
+  constraints: null
+  distribution: null
+  type: null
+message:
+  constraints: null
+  distribution: null
+  type: null
+source:
+  constraints: null
+  distribution: null
+  type: null
+source_id:
+  constraints: null
+  distribution: null
+  type: null
+_id:
+  constraints: null
+  distribution: null
+  type: null
+name:
+  constraints: null
+  distribution: null
+  type: null
+short_name:
+  constraints: null
+  distribution: null
+  type: null
+patient_id:
+  constraints: null
+  distribution: null
+  type: null
+date_of_birth:
+  constraints: null
+  distribution: null
+  type: null
+sex:
+  constraints: null
+  distribution: null
+  type: null
+phone:
+  constraints: null
+  distribution: null
+  type: null
+patient_age_in_years:
+  constraints: null
+  distribution: null
+  type: null
+patient_age_in_months:
+  constraints: null
+  distribution: null
+  type: null
+patient_age_in_days:
+  constraints: null
+  distribution: null
+  type: null
+patient_uuid:
+  constraints: null
+  distribution: null
+  type: null
+patient_name:
+  constraints: null
+  distribution: null
+  type: null
+patient_short_name:
+  constraints: null
+  distribution: null
+  type: null
+patient_display_name:
+  constraints: null
+  distribution: null
+  type: null
+date_of_death:
+  constraints: null
+  distribution: null
+  type: null
+place_of_death:
+  constraints: null
+  distribution: null
+  type: null
+place_of_death_other:
+  constraints: null
+  distribution: null
+  type: null
+death_information:
+  constraints: null
+  distribution: null
+  type: null
+submit:
+  constraints: null
+  distribution: null
+  type: null
+r_summary_details:
+  constraints: null
+  distribution: null
+  type: null
+c_patient_age:
+  constraints: null
+  distribution: null
+  type: null
+r_patient_details:
+  constraints: null
+  distribution: null
+  type: null
+r_death_info:
+  constraints: null
+  distribution: null
+  type: null
+r_key_instruction:
+  constraints: null
+  distribution: null
+  type: null
+blank_note:
+  constraints: null
+  distribution: null
+  type: null
+r_referral:
+  constraints: null
+  distribution: null
+  type: null
+r_undo:
+  constraints: null
+  distribution: null
+  type: null
+__date_of_death:
+  constraints: null
+  distribution: null
+  type: null
+__place_of_death:
+  constraints: null
+  distribution: null
+  type: null
+__place_of_death_other:
+  constraints: null
+  distribution: null
+  type: null
+__death_information:
+  constraints: null
+  distribution: null
+  type: null
+__patient_uuid:
+  constraints: null
+  distribution: null
+  type: null
+__patient_id:
+  constraints: null
+  distribution: null
+  type: null
+__household_uuid:
+  constraints: null
+  distribution: null
+  type: null
+__source:
+  constraints: null
+  distribution: null
+  type: null
+__source_id:
+  constraints: null
+  distribution: null
+  type: null
+instanceID:
+  constraints: null
+  distribution: null
+  type: null

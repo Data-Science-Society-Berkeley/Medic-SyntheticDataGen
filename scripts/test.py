@@ -1,12 +1,12 @@
-import xml.etree.ElementTree as ET #Element Tree XML parsing library
-import re #Regex library
-import yaml
-from collections import OrderedDict
-from yaml import load, dump
-try:
-    from yaml import CLoader as Loader, CDumper as Dumper
-except ImportError:
-    from yaml import Loader, Dumper
+# import xml.etree.ElementTree as ET #Element Tree XML parsing library
+# import re #Regex library
+# import yaml
+# from collections import OrderedDict
+# from yaml import load, dump
+# try:
+#     from yaml import CLoader as Loader, CDumper as Dumper
+# except ImportError:
+#     from yaml import Loader, Dumper
 
 # @params
 #   root: root of an ElementTree
@@ -47,4 +47,5 @@ def xmlParse(fileName):
     dfs(form, columns) #extract column names with DFS
     return cleanColumnNames(columns) #clean the columns and return
 
-
+if __name__ == '__main__':
+    print(xmlParse('../xml-files/death_report.xml'))

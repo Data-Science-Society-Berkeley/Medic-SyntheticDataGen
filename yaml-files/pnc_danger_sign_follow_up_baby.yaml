@@ -1,0 +1,222 @@
+---
+rows:
+lat:
+  constraints: null
+  distribution: null
+  type: null
+long:
+  constraints: null
+  distribution: null
+  type: null
+error:
+  constraints: null
+  distribution: null
+  type: null
+message:
+  constraints: null
+  distribution: null
+  type: null
+source:
+  constraints: null
+  distribution: null
+  type: null
+source_id:
+  constraints: null
+  distribution: null
+  type: null
+delivery_uuid:
+  constraints: null
+  distribution: null
+  type: null
+_id:
+  constraints: null
+  distribution: null
+  type: null
+name:
+  constraints: null
+  distribution: null
+  type: null
+short_name:
+  constraints: null
+  distribution: null
+  type: null
+patient_id:
+  constraints: null
+  distribution: null
+  type: null
+date_of_birth:
+  constraints: null
+  distribution: null
+  type: null
+sex:
+  constraints: null
+  distribution: null
+  type: null
+chw_name:
+  constraints: null
+  distribution: null
+  type: null
+phone:
+  constraints: null
+  distribution: null
+  type: null
+patient_age_in_years:
+  constraints: null
+  distribution: null
+  type: null
+patient_uuid:
+  constraints: null
+  distribution: null
+  type: null
+patient_name:
+  constraints: null
+  distribution: null
+  type: null
+t_danger_signs_referral_follow_up_date:
+  constraints: null
+  distribution: null
+  type: null
+t_danger_signs_referral_follow_up:
+  constraints: null
+  distribution: null
+  type: null
+visit_confirm:
+  constraints: null
+  distribution: null
+  type: null
+danger_sign_present:
+  constraints: null
+  distribution: null
+  type: null
+danger_signs_question_note:
+  constraints: null
+  distribution: null
+  type: null
+infected_umbilical_cord:
+  constraints: null
+  distribution: null
+  type: null
+convulsion:
+  constraints: null
+  distribution: null
+  type: null
+difficulty_feeding:
+  constraints: null
+  distribution: null
+  type: null
+vomit:
+  constraints: null
+  distribution: null
+  type: null
+drowsy:
+  constraints: null
+  distribution: null
+  type: null
+stiff:
+  constraints: null
+  distribution: null
+  type: null
+yellow_skin:
+  constraints: null
+  distribution: null
+  type: null
+fever:
+  constraints: null
+  distribution: null
+  type: null
+blue_skin:
+  constraints: null
+  distribution: null
+  type: null
+r_danger_sign_present:
+  constraints: null
+  distribution: null
+  type: null
+congratulate_no_ds_note:
+  constraints: null
+  distribution: null
+  type: null
+refer_patient_note_1:
+  constraints: null
+  distribution: null
+  type: null
+refer_patient_note_2:
+  constraints: null
+  distribution: null
+  type: null
+__visited_hf:
+  constraints: null
+  distribution: null
+  type: null
+__still_experiencing_danger_sign:
+  constraints: null
+  distribution: null
+  type: null
+__infected_umbilical_cord:
+  constraints: null
+  distribution: null
+  type: null
+__convulsions:
+  constraints: null
+  distribution: null
+  type: null
+__difficulty_feeding_or_drinking:
+  constraints: null
+  distribution: null
+  type: null
+__vomits_everything:
+  constraints: null
+  distribution: null
+  type: null
+__drowsy_or_unconscious:
+  constraints: null
+  distribution: null
+  type: null
+__body_stiffness:
+  constraints: null
+  distribution: null
+  type: null
+__yellow_skin_color:
+  constraints: null
+  distribution: null
+  type: null
+__fever:
+  constraints: null
+  distribution: null
+  type: null
+__blue_skin_color:
+  constraints: null
+  distribution: null
+  type: null
+__has_danger_sign:
+  constraints: null
+  distribution: null
+  type: null
+__patient_uuid:
+  constraints: null
+  distribution: null
+  type: null
+__patient_id:
+  constraints: null
+  distribution: null
+  type: null
+__household_uuid:
+  constraints: null
+  distribution: null
+  type: null
+__source:
+  constraints: null
+  distribution: null
+  type: null
+__source_id:
+  constraints: null
+  distribution: null
+  type: null
+__delivery_uuid:
+  constraints: null
+  distribution: null
+  type: null
+instanceID:
+  constraints: null
+  distribution: null
+  type: null
