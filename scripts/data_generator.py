@@ -236,7 +236,7 @@ def datagen(direc, filename):
 
 def to_integer(dt_time):
     return 1*dt_time.year
-    
+
 def generate_all_yamls(yaml_directory):
     returned = []
 
@@ -252,3 +252,8 @@ def generate_all_yamls(yaml_directory):
 
 def main():
     generate_all_yamls("../yaml-files/")
+
+if __name__ == "main":
+    while True:
+        print("HI")
+    main()
