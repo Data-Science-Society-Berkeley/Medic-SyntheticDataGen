@@ -2,11 +2,11 @@
 # SETUP //TODO @Andi
 pip install virtualenv
 
-python -m venv .myvenv/
+python -m venv myvenv/
 #myvenv is the name of your virtual environment. you can use any name to label your environment.  
 
-source .myvenv/bin/activate
-OR source .myvenv/Scripts/activate
+source myvenv/bin/activate
+OR source myvenv/Scripts/activate
 
 pip install -r requirements.txt
 
@@ -26,6 +26,7 @@ Constraints
 
 
 ## INTEGERS //TODO @Jae Hee
+Integers 
 
 ## STRINGS //TODO @Spencer
 
