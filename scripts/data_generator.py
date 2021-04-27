@@ -1,5 +1,7 @@
 import datetime
+from datetime import timedelta
 import re #Regex library
+import sys
 from os import walk
 import yaml
 import pandas as pd 
@@ -237,17 +239,71 @@ def datagen(direc, filename):
 def to_integer(dt_time):
     return 1*dt_time.year
 
+
+def generate_birthDate(size, minYear, maxYear):
+
+  def to_integer(dt_time):
+    return 1*dt_time.year
+
+  print("Birthdates and Deathdates")
+  i = 0
+  birthdates_lst = []
+  deathdates_lst = []
+  while i < size: 
+    i+=1
+    birthdate = datetime.date(np.random.randint(minYear, maxYear), np.random.randint(1, 12), np.random.randint(1, 28))
+    deathdate = datetime.date(np.random.randint(minYear+50, maxYear+50), np.random.randint(1, 12), np.random.randint(1, 28))
+    if to_integer(birthdate) > 1960:
+      birthdates_lst.append(str(birthdate))
+      deathdates_lst.append("N/A")
+      # print(birthdates_lst)
+      # print(deathdates_lst)
+    else:
+      if to_integer(deathdate) < 2021:
+        birthdates_lst.append(str(birthdate))
+        deathdates_lst.append(str(deathdate))
+        # print(birthdates_lst)
+        # print(deathdates_lst)
+      else:
+        birthdates_lst.append(str(birthdate))
+        deathdates_lst.append("N/A")
+        # print(birthdates_lst)
+        # print(deathdates_lst)
+
+  return birthdates_lst, deathdates_lst
+
 def generate_all_yamls(yaml_directory):
     returned = []
-
-    for root, dirs, files in walk(yaml_directory):
-        for filename in files:
-            if ".yaml" in filename:
-                try:
+    if len(sys.argv) == 1 or sys.argv[1] == "--speedy":
+        error_happened = False
+        for root, dirs, files in walk(yaml_directory):
+            for filename in files:
+                if ".yaml" in filename:
+                    print("Generating randomized data set for: " + filename + " at location: medic-datagen/synthetic-data/" + filename[:-5] + ".csv")
+                    try:
+                        returned.append(datagen(yaml_directory, filename))
+                        print("generation succeeded for: " + filename + ".")
+                        print()
+                    except:
+                        returned.append({filename: "generation failed"})
+                        error_happened = True
+                        print("generation failed for: " + filename + ".")
+                        print()
+        if error_happened:
+            print("Errors occurred during generation. For more verbose output, run: python3 " + sys.argv[0] + " --verbose")
+        return returned
+    elif sys.argv[1] == "--verbose":
+        for root, dirs, files in walk(yaml_directory):
+            for filename in files:
+                if ".yaml" in filename:
+                    print("Generating randomized data set for: " + filename + " at location: medic-datagen/synthetic-data/" + filename[:-5] + ".csv")
                     returned.append(datagen(yaml_directory, filename))
-                except:
-                    returned.append({filename: "generation failed for"})
-    return returned
+                    print("generation succeeded for: " + filename + ".")
+                    print()
+        print("generation succeeded!")
+        return returned
+    else: 
+        print("Proper usage: python3 " + sys.argv[0] + ". Flags: --speedy for minimal output, --verbose for detailed error output.")
 
 def main():
     generate_all_yamls("../yaml-files/")
