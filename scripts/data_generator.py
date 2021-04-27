@@ -242,18 +242,15 @@ def generate_all_yamls(yaml_directory):
 
     for root, dirs, files in walk(yaml_directory):
         for filename in files:
-            print(filename)
             if ".yaml" in filename:
                 try:
                     returned.append(datagen(yaml_directory, filename))
                 except:
-                    returned.append({filename: "generation failed"})
+                    returned.append({filename: "generation failed for"})
     return returned
 
 def main():
     generate_all_yamls("../yaml-files/")
 
-if __name__ == "main":
-    while True:
-        print("HI")
+if __name__ == "__main__":
     main()

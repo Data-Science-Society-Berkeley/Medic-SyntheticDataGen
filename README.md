@@ -3,7 +3,6 @@
 pip install virtualenv
 
 python -m venv myvenv/
-#myvenv is the name of your virtual environment. you can use any name to label your environment.  
 
 source myvenv/bin/activate
 OR source myvenv/Scripts/activate
@@ -26,7 +25,7 @@ Constraints
 
 
 ## INTEGERS //TODO @Jae Hee
-Integers 
+Integers are sampled using the same distributions 
 
 ## STRINGS //TODO @Spencer
 

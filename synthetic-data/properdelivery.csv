@@ -1,0 +1,21 @@
+,_id,birth_date,date_of_birth,error,lat,long,message,name,patient_id,patient_uuid,source,source_id,still_pregnant,use_cases
+0,802,2020-02-08,1958-05-22,5.0,120.34,30.54,When can I reach you?,bye,407,942,443,779,no,use5
+1,182,2006-01-15,1926-03-24,7.0,120.34,30.54,When can I reach you?,bye,833,112,1159,985,no,use4
+2,493,1955-03-02,1953-03-03,9.0,120.34,30.54,Thanks!,bye,548,675,728,1188,no,use10
+3,298,2013-05-14,1912-10-25,8.0,120.34,30.54,When can I reach you?,bye,168,868,709,857,no,use3
+4,324,1953-01-19,1918-04-03,3.0,120.34,30.54,What time are you available?,nah,394,1077,315,1047,no,use8
+5,738,1993-08-02,1952-04-22,8.0,120.34,30.54,What time are you available?,nah,159,914,578,827,no,use15
+6,546,1975-09-17,1917-08-10,7.0,120.34,30.54,What time are you available?,nah,344,667,376,178,no,use6
+7,1000,1997-01-20,1930-04-24,4.0,120.34,30.54,What time are you available?,bye,273,207,973,733,no,use5
+8,529,2013-09-23,1939-03-13,3.0,120.34,30.54,When can I reach you?,bye,884,1118,636,1209,no,use12
+9,1231,1989-03-21,1936-11-01,6.0,120.34,30.54,What time are you available?,bye,427,570,677,823,no,use6
+10,105,1998-02-01,1905-02-07,6.0,120.34,30.54,What time are you available?,bye,439,495,118,1129,no,use12
+11,1168,1980-02-24,1916-01-21,9.0,120.34,30.54,What time are you available?,nah,459,624,738,1222,no,use9
+12,118,1985-01-23,1910-09-22,6.0,120.34,30.54,When can I reach you?,Yeah,271,310,1152,182,no,use7
+13,462,1978-07-18,1903-10-01,3.0,120.34,30.54,When can I reach you?,bye,505,436,1160,1084,no,use10
+14,251,2001-03-22,1926-10-07,8.0,120.34,30.54,What time are you available?,nah,677,1119,1077,838,no,use6
+15,841,1976-08-19,1947-03-20,1.0,120.34,30.54,What time are you available?,nah,996,185,491,282,no,use14
+16,851,1985-07-19,1958-09-05,9.0,120.34,30.54,Thanks!,nah,563,91,889,1145,no,use2
+17,775,1967-08-07,1947-05-04,8.0,120.34,30.54,What time are you available?,bye,337,1087,868,1160,no,use5
+18,807,1958-02-13,1948-11-27,3.0,120.34,30.54,What time are you available?,bye,42,512,1121,167,no,use2
+19,935,2015-06-25,1934-08-18,6.0,120.34,30.54,When can I reach you?,bye,998,627,1069,648,no,use14
