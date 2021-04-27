@@ -1,7 +1,6 @@
-regex==2021.4.4
 PyYAML==5.4.1
 pandas==1.2.4
 numpy==1.19.5
-virtualenv==20.4.3
-pycopy-xml.etree.ElementTree
-ordereddict
+lxml
+
+
