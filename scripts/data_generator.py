@@ -2,6 +2,7 @@ import datetime
 from datetime import timedelta
 import re #Regex library
 import sys
+import os
 from os import walk
 import yaml
 import pandas as pd 
@@ -234,7 +235,11 @@ def datagen(direc, filename):
         else:
             raise SyntaxError("Type for " + i + " not 'int', 'float', 'string', or 'date': " + loaded[i]['type'])
         df = pd.DataFrame(data_list)
-    return df.to_csv("../synthetic-data/" + filename[:-5] + ".csv") #(CSV for each yaml file -> synthetic-data directory)
+    if os.getcwd()[-7:] == 'scripts':
+        df.to_csv("../synthetic-data/" + filename[:-5] + ".csv") #(CSV for each yaml file -> synthetic-data directory)
+    else:
+        df.to_csv(os.getcwd() + "/synthetic-data/" + filename[:-5] + ".csv")
+    return df
 
 def to_integer(dt_time):
     return 1*dt_time.year
@@ -276,6 +281,7 @@ def generate_all_yamls(yaml_directory):
     returned = []
     if len(sys.argv) == 1 or sys.argv[1] == "--speedy":
         error_happened = False
+
         for root, dirs, files in walk(yaml_directory):
             for filename in files:
                 if ".yaml" in filename:
@@ -293,7 +299,7 @@ def generate_all_yamls(yaml_directory):
             print("Errors occurred during generation. For more verbose output, run: python3 " + sys.argv[0] + " --verbose")
         return returned
     elif sys.argv[1] == "--verbose":
-        for root, dirs, files in walk(yaml_directory):
+        for root, dirs, files in os.walk(yaml_directory):
             for filename in files:
                 if ".yaml" in filename:
                     print("Generating randomized data set for: " + filename + " at location: medic-datagen/synthetic-data/" + filename[:-5] + ".csv")
@@ -306,7 +312,11 @@ def generate_all_yamls(yaml_directory):
         print("Proper usage: python3 " + sys.argv[0] + ". Flags: --speedy for minimal output, --verbose for detailed error output.")
 
 def main():
-    generate_all_yamls("../yaml-files/")
+    if os.getcwd()[-7:] == 'scripts':
+        generate_all_yamls("../yaml-files/")
+    else:
+        generate_all_yamls(os.getcwd() + "/yaml-files/")
+
 
 if __name__ == "__main__":
     main()
