@@ -85,12 +85,13 @@ Constraints: Users should input a range of years, in the form of a minimum year 
 - 
 
 # CONTRIBUTORS
-Data Science Society @ Berkeley - Social Good Committee \
+**Data Science Society @ Berkeley - Social Good Committee** \
 Steven Chen - schen1822@berkeley.edu \
-Andi Halim - fdsafds@berkeley.edu \
-Jae Hee Koh - fdsa@berkeley.edu \
-Rithik Goli - fd@berkeley.edu \
-Ingrid Chien, Spencer Jenkins
+Andi Halim - @berkeley.edu \
+Jae Hee Koh - @berkeley.edu \
+Rithik Goli - @berkeley.edu \
+Ingrid Chien - @berkely.edu \
+Spencer Jenkins - @berkeley.edu 
 
 
 
