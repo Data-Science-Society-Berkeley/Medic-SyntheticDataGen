@@ -84,9 +84,13 @@ Constraints: Users should input a range of years, in the form of a minimum year 
 - Do not currently have a multiselect datatype
 - 
 
-# DEVELOPER CREDITS
+# CONTRIBUTORS
 Data Science Society @ Berkeley - Social Good Committee \
-Steven Chen, Andi Halim, Jae Hee Koh, Rithik Goli, Ingrid Chien, Spencer Jenkins
+Steven Chen - schen1822@berkeley.edu \
+Andi Halim - fdsafds@berkeley.edu \
+Jae Hee Koh - fdsa@berkeley.edu \
+Rithik Goli - fd@berkeley.edu \
+Ingrid Chien, Spencer Jenkins
 
 
 
