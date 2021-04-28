@@ -85,7 +85,7 @@ Constraints: Users should input a range of years, in the form of a minimum year 
 - 
 
 # DEVELOPER CREDITS
-Data Science Society @ Berkeley - Social Good Committee
+Data Science Society @ Berkeley - Social Good Committee \
 Steven Chen, Andi Halim, Jae Hee Koh, Rithik Goli, Ingrid Chien, Spencer Jenkins
 
 
