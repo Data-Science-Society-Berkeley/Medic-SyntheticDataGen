@@ -1,13 +1,10 @@
 # SP21-MedicMobile
 # Setup //TODO @Andi
-pip install virtualenv
-
-python -m venv myvenv/
-
-source myvenv/bin/activate
-OR source myvenv/Scripts/activate
-
-pip install -r requirements.txt
+1. `pip install virtualenv`
+2. `python -m venv myvenv/`
+3. `source myvenv/bin/activate`
+OR `source myvenv/Scripts/activate`
+4. `pip install -r requirements.txt`
 
 # Instructions //TODO @Steven 
 1. Upload .xml files into the *xml-files* directory 
@@ -85,12 +82,12 @@ Constraints: Users should input a range of years, in the form of a minimum year 
 - 
 
 # Contributors
-**Data Science Society @ Berkeley - Social Good Committee** \
-* Steven Chen - schen1822@berkeley.edu \
-* Andi Halim - @berkeley.edu \
-* Jae Hee Koh - @berkeley.edu \
-* Rithik Goli - @berkeley.edu \
-* Ingrid Chien - @berkely.edu \
+**Data Science Society @ Berkeley - Social Good Committee** 
+* Steven Chen - schen1822@berkeley.edu 
+* Andi Halim - @berkeley.edu 
+* Jae Hee Koh - @berkeley.edu 
+* Rithik Goli - @berkeley.edu 
+* Ingrid Chien - @berkely.edu 
 * Spencer Jenkins - @berkeley.edu 
 
 
