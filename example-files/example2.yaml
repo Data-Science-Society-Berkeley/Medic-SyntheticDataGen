@@ -1,39 +1,3 @@
-#
-# generated with http://www.yamllint.com/
-#
-#
-# USE YAML FILES OF THIS TYPE TO GENERATE RANDOM DATA! 
-#
-#
-# Each entry (in the format of the template below)
-#
-#
-# sample entry:
-# ? ______ (name of data to generate)
-# :
-#   constraints: _____ (THESE OVERRIDE THE DISTRIBUTION. ~ for none, if not, blank.)
-#     min: ____ # minimum value acceptable, int or float. If ''
-#     max: ____ # maximum value acceptable, int or float
-#     (other future constraints go here)
-#
-#   distribution: (specifies distribution to be generated)
-#     name: _____ # normal, uniform, beta, poisson, binomial, etc. should be the string name of the distribution.
-#     mean: _____ # for normal distribution, int or float
-#     std: _____ # for normal distribution, int or float
-#     prob: ______ # for use with binomial distribution, float in range [0,1]
-#     n: ______ # for use with binomial distribution, positive integer
-#     lam: _____ # for use with Poisson or exponential distribution, int or float
-#     a: _____ # minimum bound of uniform distribution
-#     b: # upper bound of uniform distribution
-#     alpha: _____ #  for use with beta
-#     beta: # for use with beta
-#     shape: # for use with gamma
-#     scale: _____ # for use with gamma
-#     (other future distribution parameters go here)
-#
-#   strings: _________ (include if type == string; file path to TXT file containing sample strings) {IN TXT FILE, SEPARATE STRINGS WITH COMMAS}
-#   type: ______ (string, int, date, float, boolean, etc. should be a string)
-# 
 rows: 200
 
 ? "normalfloat"

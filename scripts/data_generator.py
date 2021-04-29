@@ -11,19 +11,8 @@ try:
     from yaml import CLoader as Loader, CDumper as Dumper
 except ImportError:
     from yaml import Loader, Dumper
-import numpy as np # name, patientid, date of death, lat, lon
-#Float Generator
+import numpy as np
 
-#-column: blood sugar
-#   type: float
-#   distribution: {name: 'normal', mean: '5.5', std: '1.5'}
-#   constraints: {upper:8 , lower:2}
-
-
-# name - string field name
-# distribution - dictionary 
-# constraints - dictionary
-# size - num rows
 def check_parameters(parameters):
     for p in parameters:
         if type(p) not in [int, float]:
@@ -107,6 +96,8 @@ def float_generator(distribution, constraints, size):
     else:
         raise SyntaxError("min and max not recognized")
 
+
+
 def int_generator(distribution, constraints, size):
     # Extract parameters from distribution
     # Use the correct function from np and pass in proper parameters + size
@@ -129,7 +120,12 @@ def int_generator(distribution, constraints, size):
     #rounds values and convert to ints
     return np.round(data).astype(int).tolist() 
 
+
+
+
 def string_generator(dist, choices, i, data_list, number_of_points):
+    '''Unlike other generators, this one doesn't return anything and only
+    adds strings to a specified list. '''
     for j in range(number_of_points):
         if dist['name'] == 'normal':
             assert 'mean' in dist and 'std' in dist, "must provide mean and std for normal dist"
@@ -181,6 +177,7 @@ def generateDate(size, minYear, maxYear):
         dates_lst.append(str(dateVal))
     
     return dates_lst
+
 
 def datagen(direc, filename):
     assert type(direc) == str and type(filename) == str, "datagen accepts a file directory and filename in string format as its arguments."
@@ -297,6 +294,8 @@ def generate_all_yamls(yaml_directory):
                         print()
         if error_happened:
             print("Errors occurred during generation. For more verbose output, run: python3 " + sys.argv[0] + " --verbose")
+        else:
+            print("Generation succeeded!")
         return returned
     elif sys.argv[1] == "--verbose":
         for root, dirs, files in os.walk(yaml_directory):
@@ -306,12 +305,13 @@ def generate_all_yamls(yaml_directory):
                     returned.append(datagen(yaml_directory, filename))
                     print("generation succeeded for: " + filename + ".")
                     print()
-        print("generation succeeded!")
+        print("Generation succeeded!")
         return returned
     else: 
         print("Proper usage: python3 " + sys.argv[0] + ". Flags: --speedy for minimal output, --verbose for detailed error output.")
 
 def main():
+    print(sys.argv[0] + ": Random Data Generator for YAML Files.")
     if os.getcwd()[-7:] == 'scripts':
         generate_all_yamls("../yaml-files/")
     else:
