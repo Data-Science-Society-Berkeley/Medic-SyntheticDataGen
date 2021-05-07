@@ -52,7 +52,7 @@ The supported distribution names and parameters are:
   -exponential: lam 
 
 Examples of user inputs in a YAML file are shown:
-
+```
 rows: 100
 heart_rate:
   constraints:
@@ -63,7 +63,8 @@ heart_rate:
     mean: 90
     std: 5
   type: float
-
+```
+```
 blood_pressure:
   constraints:
     min: null
@@ -72,7 +73,7 @@ blood_pressure:
     name: poisson
     lam : 120
   type: float
-
+```
 
 ## Integers 
 Integers are sampled using a Bernoulli distribution, as well as the 8 distributions used in the float generator function.
@@ -83,30 +84,30 @@ Distribution: Bernoulli(p) and supported float distributions.
 Constraints(optional): The maximum and minimum values the user wishes to keep the generated data between. 
 
 Examples of user inputs in a YAML file are shown:
-
+```
 patient_id:
   constraints: ~
   distribution: 
     name: bernoulli
     p: 0.5
   type: int
-
+```
 ## Strings
 
 Strings are randomly sampled using discrete integer probability distributions. Strings to sample from are specified by a comma-delineated .txt file 
 in ./yaml-files/default-text/. This file should be referenced in the `string` attribute for the data column. Distributions supported include all distributions supported for integers.
 
 Example:
-
-`province:`
-`  constraints: ~`
-`  distribution:`
-`  name: normal`
-`    mean: 50`
-`    std: 2`
-`  strings: ./default-text/province.txt`
-`  type: string`
-
+```
+province:
+  constraints: ~
+  distribution:
+  name: normal
+    mean: 50
+    std: 2
+  strings: ./default-text/province.txt
+  type: string
+```
 Example of `province.txt`:
 
 `Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island, Quebec, Saskatchewan`
