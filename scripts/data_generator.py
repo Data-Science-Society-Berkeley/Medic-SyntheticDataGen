@@ -72,7 +72,7 @@ def float_generator(distribution, constraints, size):
     elif name == 'exponential':
         lam = distribution['lam']
         check_parameters([lam])
-        data = np.random.exponential(lam, size)
+        data = np.random.exponential(1/lam, size)
 
     #checks if 'name' input is supported by generator 
     else:

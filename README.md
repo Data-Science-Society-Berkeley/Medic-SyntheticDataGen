@@ -117,7 +117,7 @@ Type: Dates are being generated as a DateTime object.
 Distribution: Dates are not being sampled from any type of distribution. 
 Constraints: Users should input a range of years, in the form of a minimum year and a maximum year. Dates will be generated between this range of years.  -
 
-Examples of user inputs in a YAML file is:
+Examples of user inputs in a YAML file are shown:
 
 birthdate:
   constraints:
