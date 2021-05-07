@@ -36,10 +36,10 @@ Users input desired data types, distribution names and parameters, and constrain
 
 The inputs for a YAML file are detailed below. 
 
-Rows: The number of data points the user wishes to generate. 
-Type: The type of data the user wish to generate. In this case, the type is float.
-Distribution: The name of the distribution the user wishes generate the data from and its corresponding parameters. 
-Constraints(optional): The maximum and minimum values the user wishes to keep the generated data between. 
+- **Rows:** The number of data points the user wishes to generate. 
+- **Type:** The type of data the user wish to generate. In this case, the type is float.
+- **Distribution:** The name of the distribution the user wishes generate the data from and its corresponding parameters. 
+- **Constraints(optional):** The maximum and minimum values the user wishes to keep the generated data between. 
 
 The supported distribution names and parameters are:
 * normal: mean, std
@@ -79,9 +79,9 @@ blood_pressure:
 Integers are sampled using a Bernoulli distribution, as well as the 8 distributions used in the float generator function.
 The int_generator function takes in a distribution, constraints, and size, which users can input in a YAML file. 
 
-Type: Int
-Distribution: Bernoulli(p) and supported float distributions.
-Constraints(optional): The maximum and minimum values the user wishes to keep the generated data between. 
+- **Type:** int
+- **Distribution:** Bernoulli(p) and supported float distributions.
+- **Constraints(optional):** The maximum and minimum values the user wishes to keep the generated data between. 
 
 Examples of user inputs in a YAML file are shown:
 ```
@@ -114,9 +114,9 @@ Example of `province.txt`:
 
 ## Dates 
 
-Type: Dates are being generated as a DateTime object.
-Distribution: Dates are not being sampled from any type of distribution. 
-Constraints: Users should input a range of years, in the form of a minimum year and a maximum year. Dates will be generated between this range of years.  -
+- **Type:** Dates are being generated as a DateTime object.
+- **Distribution:** Dates are not being sampled from any type of distribution. 
+- **Constraints:** Users should input a range of years, in the form of a minimum year and a maximum year. Dates will be generated between this range of years.  -
 
 Examples of user inputs in a YAML file are shown:
 ```
