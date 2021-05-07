@@ -118,13 +118,14 @@ Distribution: Dates are not being sampled from any type of distribution.
 Constraints: Users should input a range of years, in the form of a minimum year and a maximum year. Dates will be generated between this range of years.  -
 
 Examples of user inputs in a YAML file are shown:
-
+```
 birthdate:
   constraints:
     min: 1900
     max: 2000
   distribution: ~
   type: date
+```
 
 
 
