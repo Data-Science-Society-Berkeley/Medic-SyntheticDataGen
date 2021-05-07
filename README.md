@@ -1,5 +1,5 @@
 # SP21-MedicMobile
-# Setup //TODO @Andi
+# Setup 
 1. `pip install virtualenv`
 2. `python -m venv myvenv/`
 3. `source myvenv/bin/activate`
