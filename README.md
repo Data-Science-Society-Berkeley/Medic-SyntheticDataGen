@@ -29,7 +29,9 @@ Explanation of the directory structure.
 
 # YAML Structure
 The yaml files will need to be manually filled out by users in a specific format. The very first line in the yaml will contain a *rows* key which takes in the number of dataset entries to be generated.\
+\
 Following this first line, each field will contain a section containing its type, distribution, and constraints. Examples of properly formatted yamls can be found in the *example-files* directory.\
+\
 Shown below is a sample snippet:
 
 ```
@@ -134,8 +136,9 @@ province:
   type: string
 ```
 Example of `province.txt`:
-
-`Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island, Quebec, Saskatchewan`
+```
+Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island, Quebec, Saskatchewan
+```
 
 ## Dates 
 
