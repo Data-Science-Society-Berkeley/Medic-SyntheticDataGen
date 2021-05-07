@@ -42,14 +42,14 @@ Distribution: The name of the distribution the user wishes generate the data fro
 Constraints(optional): The maximum and minimum values the user wishes to keep the generated data between. 
 
 The supported distribution names and parameters are:
-  -normal: mean, std
-  -lognormal: mean, std
-  -uniform: a, b 
-  -binomial: n, p 
-  -poisson: lam 
-  -beta: alpha, beta 
-  -gamma: shape, scale 
-  -exponential: lam 
+* normal: mean, std
+* lognormal: mean, std
+* uniform: a, b 
+* binomial: n, p 
+* poisson: lam 
+* beta: alpha, beta 
+* gamma: shape, scale 
+* exponential: lam 
 
 Examples of user inputs in a YAML file are shown:
 ```
