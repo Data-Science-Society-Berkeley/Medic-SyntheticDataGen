@@ -20,6 +20,7 @@ OR `source myvenv/Scripts/activate`
 # Directory Structure
 Explanation of the directory structure.
 - **myvenv:** virtual environment initialization
+- **example-files**: contains example xml, yaml, and csv files for user understanding of how to use the synthetic data generator
 - **scripts:** contains all executable python code for xml parsing and synthetic data generation
 - **xml-files:** where users input xml files produced from forms
 - **yaml-files:** contains empty .yaml files outputted from xml-parse.py. Users must manually fill out each .yaml file in this directory.
