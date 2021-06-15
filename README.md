@@ -1,6 +1,4 @@
 # Medic Synthetic Data Generator
-**Project Background:** For a number of reasons, Medic would like to have a means of creating realistic synthetic datasets. First, the data collected by the CHT are sensitive and contain Personal Identifiable Information (PII) and Protected Health Information (PHI), and cannot be shared with partner organizations without signing DUAs/NDAs. Having artificial versions that resemble real datasets would allow Medic to share data with data science partners and/or publish them in open repositories. Second, it would be nice to use realistic datasets when testing new models, analyses or features. Synthetic datasets could also facilitate QA work and dashboard building. Ideally, the tool is able to generate data fitting a schema generated from the source code of a CHT application.
-
 # Setup 
 1. `pip install virtualenv`
 2. `python -m venv myvenv/`
@@ -158,13 +156,13 @@ birthdate:
   type: date
 ```
 
-
-
 # Current Issues/Further Improvements
 * Dates are randomly generated without distribution.
 * Does not take into constraints regarding relationship between birthdate and deathdate
 * Do not currently have a multiselect datatype
 
+# Project Background
+For a number of reasons, Medic would like to have a means of creating realistic synthetic datasets. First, the data collected by the CHT are sensitive and contain Personal Identifiable Information (PII) and Protected Health Information (PHI), and cannot be shared with partner organizations without signing DUAs/NDAs. Having artificial versions that resemble real datasets would allow Medic to share data with data science partners and/or publish them in open repositories. Second, it would be nice to use realistic datasets when testing new models, analyses or features. Synthetic datasets could also facilitate QA work and dashboard building. Ideally, the tool is able to generate data fitting a schema generated from the source code of a CHT application.
 
 # Contributors
 **Data Science Society @ Berkeley - Social Good Committee Spring 2021** 
