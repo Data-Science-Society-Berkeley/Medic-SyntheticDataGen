@@ -1,4 +1,4 @@
-# SP21-MedicMobile
+# Medic Synthetic Data Generator
 # Setup 
 1. `pip install virtualenv`
 2. `python -m venv myvenv/`
